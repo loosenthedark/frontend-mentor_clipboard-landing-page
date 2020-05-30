@@ -11,7 +11,6 @@ body {
   font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 400;
   line-height: 1.3;
-  padding: 0;
   color: #9EABB2;
 }
 
@@ -39,9 +38,17 @@ p {
   font-weight: 400;
 }
 
+h1,
+p {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
 h1 {
   font-size: 32px;
   line-height: 38px;
+  letter-spacing: -0.016em;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -57,6 +64,7 @@ h3 {
 p {
   font-size: 16px;
   line-height: 26px;
+  letter-spacing: 0.0075em;
 }
 
 a {
@@ -67,10 +75,74 @@ a {
 
 /* Buttons */
 
+button {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+  color: white;
+  font-family: 'Bai Jamjuree', sans-serif;
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-weight: 600;
+  border-radius: 35px;
+  outline: none;
+}
+
 button#ios-btn {
   background-color: #26bba4;
+  box-shadow: 3px 3px 5px #006f58;
+  margin-bottom: 24px;
+}
+
+button#ios-btn:hover,
+button#ios-btn:active {
+  background-color: #0da28b;
 }
 
 button#mac-btn {
   background-color: #6174FF;
+  box-shadow: 3px 3px 5px #1528b3;
+}
+
+button#mac-btn:hover,
+button#mac-btn:active {
+  background-color: #485be6;
+}
+
+button:active {
+  transform: scale(.97);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Images */
+
+#logo-large {
+  display: block;
+  margin: 0 auto 64px;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  padding-top: 125px;
+  margin-bottom: 164px;
+}
+
+header:before {
+  content: "";
+  background-image: url('../images/bg-header-mobile.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  height: 55vh;
+  width: 100%;
+}
+
+.hero-text {
+  margin-bottom: 55px;
 }
