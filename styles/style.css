@@ -7,6 +7,10 @@ html, * {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 18px;
   font-family: 'Bai Jamjuree', sans-serif;
@@ -77,6 +81,19 @@ a {
   font-weight: 400;
 }
 
+a:hover {
+  color: hsl(171, 66%, 44%);
+  transition: color 100ms ease-in-out;
+}
+
+ul {
+  text-align: center;
+}
+
+li:not(:last-child) {
+  margin-bottom: 23px;
+}
+
 /* Buttons */
 
 button {
@@ -88,8 +105,8 @@ button {
   border: none;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 11px;
-  padding-bottom: 9px;
+  padding-top: 13px;
+  padding-bottom: 11px;
   font-weight: 600;
   border-radius: 35px;
   outline: none;
@@ -108,7 +125,7 @@ button:active {
 button#ios-btn {
   background-color: #26bba4;
   box-shadow: 3px 3px 5px #006f58;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 button#ios-btn:hover,
@@ -133,6 +150,15 @@ button#mac-btn:active {
 #logo-large {
   display: block;
   margin: 0 auto 64px;
+}
+
+#logo-small {
+  position: relative;
+  display: block;
+  top: 50px;
+  margin: 0 auto 85px;
+  width: 55px;
+  height: 55px;
 }
 
 /* Header */
@@ -252,4 +278,54 @@ header:before {
 
 #vectorgraphics-logo {
   width: 105px;
+}
+
+/* CTA section */
+
+.cta-text {
+  margin-bottom: 55px;
+}
+
+.cta {
+  margin-bottom: 180px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #F5F7F7;
+  height: 540px;
+  position: relative;
+}
+
+.footer-links {
+  margin-bottom: 45px;
+}
+
+/* .footer-links a {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 120px;
+} */
+
+.footer-social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin: 0 auto 30px;
+  padding-bottom: 45px;
+  height: 27px;
+}
+
+.svg-class {
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+}
+
+a .svg-class:hover path {
+  fill: hsl(171, 66%, 44%);
+  transform: translateY(-0.1em);
+  transition: fill 100ms ease-in-out, transform 100ms ease-in-out;
 }
