@@ -147,14 +147,14 @@ button:active {
   cursor: pointer;
 }
 
-button#ios-btn {
+button.ios-btn {
   background-color: #26bba4;
   box-shadow: 3px 3px 5px #006f58;
   margin-bottom: 26px;
 }
 
-button#ios-btn:hover,
-button#ios-btn:active {
+button.ios-btn:hover,
+button.ios-btn:active {
   background-color: #5DCDBB;
   transition: background-color 200ms ease-in-out;
 }
@@ -181,7 +181,7 @@ button#mac-btn:active {
     max-width: 227px;
   }
 
-  button#ios-btn {
+  button.ios-btn {
     margin-bottom: 0;
     margin-right: 22px;
   }
