@@ -388,6 +388,7 @@ and (max-device-width : 991px)  {
 
 @media only screen and (min-width: 992px) {
   #supercharge-main-text {
+    font-size: 18px;
     margin-bottom: 75px;
   }
 }
@@ -396,7 +397,7 @@ and (max-device-width : 991px)  {
   margin-bottom: 70px;
 }
 
-.supercharge-text:last-of-type {
+#supercharge-text-last {
   margin-bottom: 135px;
 }
 
@@ -424,6 +425,12 @@ and (max-device-width : 991px)  {
 .supercharge img {
   display: block;
   margin: 0 auto 35px;
+}
+
+@media only screen and (max-width: 991px) {
+  .supercharge img {
+    margin: 0 auto 60px;
+  }
 }
 
 .supercharge img.company-logo:not(:last-of-type) {
