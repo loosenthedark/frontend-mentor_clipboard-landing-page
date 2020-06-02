@@ -366,6 +366,12 @@ and (max-device-width : 991px)  {
   margin-bottom: 166px;
 }
 
+@media only screen and (min-width: 992px) {
+  .supercharge {
+    margin-bottom: 130px;
+  }
+}
+
 .supercharge h2 {
   margin-bottom: 9px;
 }
@@ -398,6 +404,7 @@ and (max-device-width : 991px)  {
   #supercharge-columns {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
   }
   #supercharge-columns img {
     height: 36px;
@@ -445,10 +452,57 @@ and (max-device-width : 991px)  {
   width: 105px;
 }
 
+@media only screen and (min-width: 768px) {
+  #google-logo {
+    width: 165px;
+  }
+  
+  #ibm-logo {
+    width: 144px;
+    height: 60px;
+  }
+  
+  #microsoft-logo {
+    width: 160px;
+    height: 41px;
+  }
+  
+  #hp-logo {
+    width: 134px;
+  }
+  
+  #vectorgraphics-logo {
+    width: 125px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #company-logos-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+  }
+  .company-logo-column {
+    width: 200px;
+    align-items: center;
+  }
+  .company-logo-column:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
 /* CTA section */
 
 .cta-text {
   margin-bottom: 55px;
+}
+
+@media only screen and (min-width: 992px) {
+  .cta-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .cta {
@@ -483,6 +537,65 @@ footer {
   height: 27px;
 }
 
+@media only screen and (min-width: 992px) {
+  footer {
+    height: 220px;
+  }
+  #footer-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 72px;
+    padding-top: 39px;
+    margin-bottom: 110px;
+  }
+  #footer-wrapper ul {
+    list-style-type: none;
+    text-align: left;
+    width: 160px;
+  }
+  #footer-wrapper ul li {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .footer-links {
+    display: none;
+  }
+  .footer-social-links {
+    margin: 0;
+    flex: 2;
+    justify-content: space-between;
+    margin-right: 120px;
+    max-width: 120px;
+    padding-bottom: 0;
+    padding-top: 27px;
+  }
+  #footer-logo {
+    flex: 2;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-right: 35px;
+  }
+  #footer-links-1,
+  #footer-links-2 {
+    flex: 1;
+    margin-right: 30px;
+  }
+  #footer-links-3 {
+    flex: 3;
+    max-width: 300px;
+    margin-right: 75px;
+  }
+  #footer-links-3 ul {
+    width: 255px;
+  }
+  #logo-small {
+    margin-bottom: 0;
+    margin-right: 85px;
+    top: 0;
+  }
+}
+
 .svg-class {
   width: 24px;
   height: 24px;
@@ -493,4 +606,12 @@ a .svg-class:hover path {
   fill: hsl(171, 66%, 44%);
   transform: translateY(-0.1em);
   transition: fill 100ms ease-in-out, transform 100ms ease-in-out;
+}
+
+@media only screen and (max-width: 991px) {
+  #footer-links-1,
+  #footer-links-2,
+  #footer-links-3 {
+    display: none;
+  }
 }
